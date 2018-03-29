@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Font Awesome Script -->
+    <!-- <script defer src="./assets/js/fontawesome-all.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class='products-page'>
+    <header>
+      <div class="modal">
+        <div class="modal-content">
+          <div class="close-modal"><i class="fa fa-close"></i></div>
+          <h2>Log in to your account</h2>
+          <form class='sign-in'>
+            <div class="sign-group">
+              <i class="fa fa-user"></i>
+              <input class="username" type="text" placeholder="Username">
+            </div>
+            <div class="sign-group">
+              <i class="fa fa-lock"></i>
+              <input class="password" type="password" placeholder="Password">
+            </div>
+            <button class="submit-form">Log In</button>
+          </form>
+          <h4>Don't have an account? <a href="#">Sign Up</a></h4>
+        </div>
+        <div class="register">
+          <div class="close-modal"><i class="fa fa-close"></i></div>
+          <h2>Log in to your account</h2>
+          <form action="#" class='sign-in'>
+            <div class="sign-group">
+              <i class="fa fa-user"></i>
+              <input class="username" type="text" placeholder="Username">
+            </div>
+            <div class="sign-group">
+              <i class="fa fa-envelope"></i>
+              <input class="email" type="email" placeholder="Email">
+            </div>
+            <div class="sign-group">
+              <i class="fa fa-lock"></i>
+              <input class="password" type="password" placeholder="Password">
+            </div>
+            <div class="sign-group">
+              <i class="fa fa-lock"></i>
+              <input class="cpassword" type="password" placeholder="Confirm password">
+            </div>
+            <button class="submit-form">Log In</button>
+          </form>
+        </div>
+      </div>
+      <div class="head">
+          <div class="left">FOOSESHOES</div>
+            <!-- <div class="right">
+                <form  class="search">
+                  <input type="text" placeholder="Search" list>
+                  <button><i class="fa fa-search"></i></button>
+                </form>
+                <div class="loginRegister">LOGIN or REGISTER</div>
+          </div> -->
+          <ul class="right">
+            <li class="search">
+              <div class="ll">
+              <input type="text" placeholder="Search">
+              <button><i class="fa fa-search"></i></button>
+              </div>
+                <ul class="hidden">
+                  <li>MEN</li>
+                  <li>KIDS</li>
+                </ul>
+            </li>
+            <li class="loginRegister"><span class="loginBt">LOGIN </span> or <span class="registerBt"> REGISTER</span></li>
+          </ul>
+        </div>
+      </header>
+      <nav>
+
+          <div class="left-side">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+
+                <!--
+                Some spans to act as a hamburger.
+
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                  <a class="home" href="./index.html"><li>Home</li></a>
+                  <a class="active" href="./products.html"><li>Products</li></a>
+                  <a href="#"><li>About</li></a>
+                  <a href="#"><li>Pages</li></a>
+                  <a href="#"><li>Blog</li></a>
+                  <a href="#"><li>Contact</li></a>
+                </ul>
+              </div>
+
+                <a class="links home" href="./index.html">Home</a>
+                <a class="links active" href="./products.html">Products</a>
+                <a class="links" href="#">About</a>
+                <a class="links" href="#">Pages</a>
+                <a class="links" href="#">Blog</a>
+                <a class="links" href="#">Contact</a>
+
+          </div>
+          <div class="right-side">
+            <div class="favorites"><i class='fa fa-star-o'></i></div>
+            <div class="cart"><i class='fa fa-cart-plus'></i></div>
+          </div>
+      </nav>
+      <main>
+        <section class="select-banner select">
+          <div class="img-container">
+            <div class="slider-content">
+              <div class="products-img-title">
+              <div class="slider-price">$145,99</div>
+              <div class="slider-title">Pink Shoes <br>2013 Collection</div>
+              </div>
+              <div class="slider-text">Nunc non fermentum nunc.Sed ut ante eget leo tempor consequat sit amet eu orci.Donc clignissinm dolor edget...</div>
+              <div class="slider-icons">
+                <i class="fa fa-eye"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-share-square-o"></i>
+                <i class="fa fa-cart-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="slide-text">
+              <p class="shop-by-banner">Shop by</p>
+              <select class="text-content">
+                <option value="brands">Brands</option>
+                <option value="saab">Even&Odd</option>
+                <option value="opel">Buffalo Decolletè</option>
+              </select>
+              <select class="text-content">
+                <option value="category">Category</option>
+                <option value="saab">Elegant</option>
+                <option value="opel">Sport</option>
+              </select>
+              <select class="text-content">
+                <option value="price">Price</option>
+                <option value="saab"> <$100</option>
+                <option value="opel"> >$100</option>
+              </select>
+          </div>
+        </section>
+        <section class="items">
+          <div class="item-group">
+            <div class="items-header">
+              <div class="header-title">
+                <div class="category">All Products</div>
+                <div class="subcategory">Home > All Products</div>
+              </div>
+              <div class="header-filter">
+                <div class="grid-view"><i class="fa fa-th-large"></i></div>
+                <div class="list-view"><i class="fa fa-list"></i></div>
+                  <select class="sort-items">
+                    <option value="alphabetically">Sort alphabetically</option>
+                    <option value="Revelance">Sort by relevance</option>
+                    <option value="alphabetically">Sort alphabetically</option>
+                  </select>
+
+              </div>
+            </div>
+            <div class="shoes">
+              <div class = "black-gold">
+                <div class="shoe">
+                    <img class = 'image' src="assets/img/shoes/greenAndBeige.png" alt="">
+                    <div class = "details">
+                      <div class="slider-price">$145,99</div>
+                      <p>Even&Odd</p>
+                      <div class="hide-icons">
+                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-share-square-o"></i>
+                        <i class="fa fa-cart-plus"></i>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="list-details">
+                      <div class="list-details-title">Even&Odd</div>
+                      <div class="list-details-price">$145,99</div>
+                      <div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div>
+                      <div class="list-details-shipment">Free shipping</div>
+                      <div class="list-icons">
+                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-share-square-o"></i>
+                        <i class="fa fa-cart-plus"></i>
+                      </div>
+                    </div>
+                </div>
+
+                <div class = "black-gold">
+                  <div class="shoe">
+                      <img class = 'image' src="assets/img/shoes/blackGreen.png" alt="">
+                      <div class = "details">
+                        <div class="slider-price">$145,99</div>
+                        <p>Even&Odd</p>
+                        <div class="hide-icons">
+                          <i class="fa fa-eye"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-share-square-o"></i>
+                          <i class="fa fa-cart-plus"></i>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="list-details">
+                        <div class="list-details-title">Even&Odd</div>
+                        <div class="list-details-price">$145,99</div>
+                        <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                        <div class="list-details-shipment">Free shipping</div>
+                        <div class="list-icons">
+                          <i class="fa fa-eye"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-share-square-o"></i>
+                          <i class="fa fa-cart-plus"></i>
+                        </div>
+                      </div>
+                  </div>
+                  <div class = "black-gold">
+                    <div class="shoe">
+                        <img class = 'image' src="assets/img/shoes/beigeRedHeel.png" alt="">
+                        <div class = "details">
+                          <div class="slider-price">$145,99</div>
+                          <p>Buffalo Decolletè</p>
+                          <div class="hide-icons">
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-share-square-o"></i>
+                            <i class="fa fa-cart-plus"></i>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="list-details">
+                          <div class="list-details-title">Even&Odd</div>
+                          <div class="list-details-price">$145,99</div>
+                          <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                          <div class="list-details-shipment">Free shipping</div>
+                          <div class="list-icons">
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-share-square-o"></i>
+                            <i class="fa fa-cart-plus"></i>
+                          </div>
+                        </div>
+                    </div>
+
+              <div class = "black-gold">
+                <div class="shoe">
+                  <img class = 'image' src="assets/img/shoes/blackHeel.png" alt="">
+                  <div class = "details">
+                    <div class="slider-price">$145,99</div>
+                    <p>Even&Odd</p>
+                    <div class="hide-icons">
+                      <i class="fa fa-eye"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-share-square-o"></i>
+                      <i class="fa fa-cart-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-details">
+                  <div class="list-details-title">Even&Odd</div>
+                  <div class="list-details-price">145,99</div>
+                  <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                  <div class="list-details-shipment">Free shipping</div>
+                  <div class="list-icons">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-share-square-o"></i>
+                    <i class="fa fa-cart-plus"></i>
+                  </div>
+
+                </div>
+              </div>
+              <div class = "black-gold">
+                <div class="shoe">
+                  <img class = 'image' src="assets/img/shoes/blackGold.png" alt="">
+                  <div class = "details">
+                    <div class="slider-price">$145,99</div>
+                    <p>Even&Odd</p>
+                    <div class="hide-icons">
+                      <i class="fa fa-eye"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-share-square-o"></i>
+                      <i class="fa fa-cart-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-details">
+                  <div class="list-details-title">Even&Odd</div>
+                  <div class="list-details-price">145,99</div>
+                  <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                  <div class="list-details-shipment">Free shipping</div>
+                  <div class="list-icons">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-share-square-o"></i>
+                    <i class="fa fa-cart-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class = "black-gold">
+                <div class="shoe">
+                  <img class = 'image' src="assets/img/shoes/blackPink.png" alt="">
+                  <div class = "details">
+                    <div class="slider-price">$145,99</div>
+                    <p>Buffalo Decolletè</p>
+                    <div class="hide-icons">
+                      <i class="fa fa-eye"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-share-square-o"></i>
+                      <i class="fa fa-cart-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-details">
+                  <div class="list-details-title">Buffalo Decolletè</div>
+                  <div class="list-details-price">145,99</div>
+                  <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                  <div class="list-details-shipment">Free shipping</div>
+                  <div class="list-icons">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-share-square-o"></i>
+                    <i class="fa fa-cart-plus"></i>
+                  </div>
+                </div>
+              </div>
+            <div class = "black-gold">
+              <div class="shoe">
+                <img class = 'image' src="assets/img/shoes/greenAndBeige.png" alt="">
+                <div class = "details">
+                  <div class="slider-price">$145,99</div>
+                  <p>Even&Odd</p>
+                  <div class="hide-icons">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-share-square-o"></i>
+                    <i class="fa fa-cart-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="list-details">
+                <div class="list-details-title">Even&Odd</div>
+                <div class="list-details-price">145,99</div>
+                <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                <div class="list-details-shipment">Free shipping</div>
+                <div class="list-icons">
+                  <i class="fa fa-eye"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-share-square-o"></i>
+                  <i class="fa fa-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class = "black-gold">
+              <div class="shoe">
+                <img class = 'image' src="assets/img/shoes/blackGreen.png" alt="">
+                <div class = "details">
+                  <div class="slider-price">$145,99</div>
+                  <p>Even&Odd</p>
+                  <div class="hide-icons">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-share-square-o"></i>
+                    <i class="fa fa-cart-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="list-details">
+                <div class="list-details-title">Buffalo Decolletè</div>
+                <div class="list-details-price">$145,99</div>
+                <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                <div class="list-details-shipment">Free shipping</div>
+                <div class="list-icons">
+                  <i class="fa fa-eye"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-share-square-o"></i>
+                  <i class="fa fa-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class = "black-gold">
+              <div class="shoe">
+                <img class = 'image' src="assets/img/shoes/beigeRedHeel.png" alt="">
+                <div class = "details">
+                  <div class="slider-price">$145,99</div>
+                  <p>Buffalo Decolletè</p>
+                  <div class="hide-icons">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-share-square-o"></i>
+                    <i class="fa fa-cart-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="list-details">
+                <div class="list-details-title">Buffalo Decolletè</div>
+                <div class="list-details-price">$145,99</div>
+                <div class="list-details-rating"><div class="list-details-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div></div>
+                <div class="list-details-shipment">Free shipping</div>
+                <div class="list-icons">
+                  <i class="fa fa-eye"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-share-square-o"></i>
+                  <i class="fa fa-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="article-group">
+            <div class="shipping">
+              <p class="article-title">Free shipping</p>
+              <p class="article-text">House Tarly of Horn Hill Words are like wind. Winter is coming. The Knight of Lemonwood. As High as Honor.</p>
+            </div>
+            <div class="testimonials">
+              <p class="article-title">Testimonials</p>
+              <p class="article-text">House Tarly of Horn Hill Words are like wind. Winter is coming. The Knight of Lemonwood. As High as Honor.</p>
+              <p class="author"><em>- John Doe -</em></p>
+            </div>
+            <div class="news">
+              <p class="article-title">Blog News</p>
+              <div class="article-text">
+                  <div class="blog-badge">apr <br/>01</div>
+                    <div class="blog-post">
+                      <p class="post-title">Nice & clean.The best for your blog!</p>
+                      <p class="post-text">Dunc the Lunk, thick as a castle wall. And now his watch is ended. </p>
+                    </div>
+              </div>
+              <div class="article-text">
+                  <div class="blog-badge">apr <br/>01</div>
+                    <div class="blog-post">
+                      <p class="post-title">Nice & clean.The best for your blog!</p>
+                      <p class="post-text">Dunc the Lunk, thick as a castle wall. And now his watch is ended. </p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pre-footer">
+          <div class="upper-part">
+            <div class="widgets">
+              <div class="text-widget">
+                <p class="widget-title">Text widget</p>
+                <p class="widget-content">Our Sun Shines Bright. I pledge my life and honor to the Night's Watch, for this night and all the nights to come. When you play the game of thrones, you win or you die. I pledge my life and honor to the Night's Watch, for this night and all the nights to come. The wolf and the lion. Never Resting.</p>
+              </div>
+              <div class="twitter-widget">
+                <p class="widget-title">Twitter widget</p>
+                <div class="twitter-wrap"></div>
+                <!-- <p class="widget-content"><span class="twitter-id">@ericafustera</span> Why thank you.Your work looks awesome by the way!<span class="twitter-id">@treemelody</span><br>19 days ago</p>
+                <p class="widget-content"><span class="twitter-id">@ericafustera</span> You can seek a refund through TF if is not as advertised - but it is :)<span class="twitter-id">@treemelody</span><br>21 days ago</p> -->
+              </div>
+              <div class="flickr-widget">
+                <p class="widget-title">Flickr widget</p>
+                <div class="flickr-gallery">
+                  <div class="flickr-row">
+                    <a href="./assets/img/unsplash/7.png" data-lightbox="image-1"><img src="./assets/img/unsplash/7.png"></img></a>
+                    <a href="./assets/img/unsplash/8.png" data-lightbox="image-2"><img src="./assets/img/unsplash/8.png"></img></a>
+                    <a href="./assets/img/unsplash/9.png" data-lightbox="image-3"><img src="./assets/img/unsplash/9.png"></img></a>
+                  </div>
+                  <div class="flickr-row">
+                    <a href="./assets/img/unsplash/10.png" data-lightbox="image-4"><img src="./assets/img/unsplash/10.png"></img></a>
+                    <a href="./assets/img/unsplash/11.png" data-lightbox="image-5"><img src="./assets/img/unsplash/11.png"></img></a>
+                    <a href="./assets/img/unsplash/12.png" data-lightbox="image-6"><img src="./assets/img/unsplash/12.png"></img></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lower-part">
+            <div class="newsletter">
+              <div class="newsletter-input">
+                <form>
+                  <input type="text" placeholder="Enter email for newsletter" value="">
+                  <button><i class="fa fa-angle-right"></i></button>
+                  <div class="error-msg">Please enter a valid email</div>
+                  <div class="success-msg">Email was registered</div>
+                </form>
+              </div>
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-wrap">
+          <div class="copyright">
+            <div class="copy">Copyright &copy;­­ Fooseshoes 2013.</div>
+            <div class="signature">Designed by EnzoVolti.</div>
+          </div>
+          <ul class="nav-footer">
+            <li><a href="#">Home</a> /</li>
+            <li><a href="#">Support</a> /</li>
+            <li><a href="#">Terms of Conditions</a> /</li>
+            <li><a href="#">Faqs</a> /</li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      <script src="assets/js/search-dropdown.js"></script>
+      <script src="assets/js/get-tweets.js"></script>
+      <script src="assets/js/sign-in.js"></script>
+      <script src="assets/js/register.js"></script>
+      <script src="assets/js/serveJSON.js"></script>
+      <script src="assets/js/item-view.js"></script>
+      <script src="assets/js/show-detail-icons.js"></script>
+      <script src="lightbox2-master/src/js/lightbox.js"></script>
+  </body>
+</html>
